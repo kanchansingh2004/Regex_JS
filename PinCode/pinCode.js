@@ -9,7 +9,7 @@ class Pincode{
     }
     //Validate pincode
     validatePincode(pinCode){
-        return (/^[1-9][0-9]{5}$/).test(pinCode);
+        return (/^[1-9]\s[0-9]{5}$/)||(/^[1-9][0-9]{5}$/).test(pinCode);
         }
     
     
@@ -20,8 +20,9 @@ try{
     console.log("Valid PIN ");
     console.log(pinCode1);
 
-    let pinCode2 = new Pincode("400088B");
-    console.log(pinCode2);
+    let pinCode = new Pincode("400 088");
+    console.log("Valid PIN ");
+    console.log(pinCode);
 
 }catch(e){
     console.log(e);

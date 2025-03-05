@@ -1,24 +1,28 @@
 //Create class for pin code
 class Pincode{
-    constructor(pincode){
+    constructor(pinCode){
         //Validate pincode
-        if(!this.validatePincode(pincode)){
+        if(!this.validatePincode(pinCode)){
             throw "Invalid pincode";
         }
-        this.pincode = pincode;
+        this.pinCode = pinCode;
     }
     //Validate pincode
-    validatePincode(pincode){
-        return /^[1-9][0-9]{5}$/.test(pincode);
+    validatePincode(pinCode){
+        return /^[1-9][0-9]{5}$/.test(pinCode);
         }
     
     
 }
 
 try{
-    let pincode = new Pincode("400088");
+    let pinCode1 = new Pincode("400088");
     console.log("Valid PIN ");
-    console.log(pincode);
+    console.log(pinCode1);
+
+    let pinCode2 = new Pincode("A400088");
+    console.log(pinCode2);
+
 }catch(e){
     console.log(e);
     }

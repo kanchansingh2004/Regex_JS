@@ -1,6 +1,6 @@
-//FUnction to check the validity
+//Function to check the validity
 function isValidEmail(email) {
-    const emailRegex = /^abc([a-zA-Z0-9._%+-]*)@bridgelabz\.co(\.[a-zA-Z]{2,})?$/;
+    const emailRegex = /^abc([a-zA-Z0-9._%+-]*)@bridgelabz\.[a-zA-Z]{2,}?$/;
     return emailRegex.test(email);
 }
 
